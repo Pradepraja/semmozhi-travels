@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semmozhi Tours & Travels | Force Urbania Van Rental — Local, Corporate & All-India Trips</title>
+  <meta name="description" content="Force Urbania van rental in Chennai - 9+1, 12+1 and 16+1 seater. Local trips, corporate trips, temple tours and all over India. ₹36/km, ₹9,500/day including driver bata.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#1b3a5c">
+</head>
+<body>
+  <div id="toast"></div>
+  <div class="rate-strip">🚐 Rent: <strong>₹36/km</strong> • Daily: <strong>₹9,500 incl. driver bata</strong> • <a href="rates.html">Get instant quote →</a></div>
+  <script>var ACTIVE_PAGE = "home";</script>
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- HERO -->
+  <section class="hero" style="padding-bottom:70px">
+    <h1>Travel Anywhere in <span>India</span> in Comfort</h1>
+    <p>Force Urbania vans (9+1, 12+1, 16+1 seater) with push-back seats, AC and attached fridge. Local trips, corporate trips, temple tours & all-over-India journeys.</p>
+    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative">
+      <a href="vehicles.html" class="btn">🚐 Our Fleet</a>
+      <a href="#" class="btn btn-blue" id="heroCallBtn">📞 Call Now</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" style="padding-top:44px">
+    <div class="container">
+      <div class="service-strip">
+        <a class="service-item" href="contact.html?type=local">
+          <div class="ic">🏠</div><h4>Local Trips</h4><p>City rentals for weddings, functions & family outings</p>
+        </a>
+        <a class="service-item" href="contact.html?type=corporate">
+          <div class="ic">💼</div><h4>Corporate Trips</h4><p>Employee transport, events & airport transfers</p>
+        </a>
+        <a class="service-item" href="rates.html">
+          <div class="ic">🛣️</div><h4>Outstation Trips</h4><p>All over India at just ₹36/km</p>
+        </a>
+        <a class="service-item" href="temple-tours.html">
+          <div class="ic">🛕</div><h4>Temple Tours</h4><p>Arupadai Veedu, Palani, Rameswaram & more</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLEET -->
+  <section class="section cream">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Our Fleet</span>
+        <h2>Force Urbania Vans</h2>
+        <p>All vans with comfortable push-back seats, full AC and experienced professional drivers.</p>
+      </div>
+      <div class="vehicle-grid" id="vehicleGrid"></div>
+      <p class="text-center mt-3"><a href="vehicles.html" class="btn btn-outline">Compare All Vans →</a></p>
+    </div>
+  </section>
+
+  <!-- WHY US / FEATURES -->
+  <section class="section">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Why Travel With Us</span>
+        <h2>Comfort, Safety & Reliability</h2>
+      </div>
+      <div class="feat-grid">
+        <div class="feat"><div class="ic">💺</div><h4>Push-Back Seats</h4><p>Recline and relax on long journeys.</p></div>
+        <div class="feat"><div class="ic">❄️</div><h4>Full AC Travel</h4><p>Cool, dust-free comfort throughout.</p></div>
+        <div class="feat"><div class="ic">🧳</div><h4>Ample Luggage</h4><p>Plenty of space for bags and belongings.</p></div>
+        <div class="feat"><div class="ic">🛡️</div><h4>Safe & Reliable</h4><p>Well-maintained vehicles, always on time.</p></div>
+        <div class="feat"><div class="ic">🧊</div><h4>Attached Fridge</h4><p>Cold water and refreshments on board.</p></div>
+        <div class="feat"><div class="ic">👨‍✈️</div><h4>Pro Drivers</h4><p>Experienced, route-savvy professionals.</p></div>
+        <div class="feat"><div class="ic">🎒</div><h4>Flexible Packages</h4><p>Custom trips designed around you.</p></div>
+        <div class="feat"><div class="ic">📞</div><h4>24/7 Support</h4><p>We're a call away anytime.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEMPLE TOURS PREVIEW -->
+  <section class="section cream">
+    <div class="container">
+      <div class="sec-head">
+        <span class="tag">Darshan Trips</span>
+        <h2>Temple Tours</h2>
+        <p>Six abodes of Lord Muruga (Arupadai Veedu), Palani, Rameswaram, Tirupati, Sabarimala & more.</p>
+      </div>
+      <div class="tour-grid" id="templeGrid"></div>
+      <p class="text-center mt-3"><a href="temple-tours.html" class="btn btn-outline">View All Temple Tours →</a></p>
+    </div>
+  </section>
+
+  <!-- RATES CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta">
+        <h2>Transparent Pricing</h2>
+        <p>Rent <strong>₹36/km</strong> • Daily <strong>₹9,500</strong> including driver bata • No hidden charges</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
+          <a href="rates.html" class="btn">Calculate My Fare</a>
+          <a href="booking.html" class="btn btn-blue">Book a Vehicle</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/sw-register.js"></script>
+  <script>
+    (function () {
+      var vs = document.getElementById("vehicleGrid");
+      vs.innerHTML = DB.getVehicles().map(vehicleCardHtml).join("");
+      document.getElementById("heroCallBtn").href = "tel:+91" + CONFIG.primaryPhone;
+
+      var tg = document.getElementById("templeGrid");
+      var temples = DB.getTours().filter(function (t) { return t.category === "Temple"; }).slice(0, 3);
+      tg.innerHTML = temples.map(tourCardHtml).join("");
+    })();
+  </script>
+  <script>renderFooter();</script>
+</body>
+</html>
