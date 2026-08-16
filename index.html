@@ -3,122 +3,1009 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semmozhi Tours & Travels | Force Urbania Van Rental — Local, Corporate & All-India Trips</title>
-  <meta name="description" content="Force Urbania van rental in Chennai - 9+1, 12+1 and 16+1 seater. Local trips, corporate trips, temple tours and all over India. ₹36/km, ₹9,500/day including driver bata.">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#1b3a5c">
+  <title>Semmozhi Tours &amp; Travels | Force Urbania Van Rental — Local, Corporate &amp; All-India Trips</title>
+  <meta name="description" content="Force Urbania van rental in Mettur, Salem, Tamil Nadu — 9+1, 12+1 and 16+1 seater. Local trips, corporate trips, temple tours and all-over-India journeys. Rent ₹36/km, daily ₹9,500 including driver bata.">
+  <meta name="theme-color" content="#12294d">
+  <!-- TODO: Replace PHONE below with your business number -->
+  <style>
+    :root {
+      --navy: #12294d;
+      --navy-2: #0d1f3c;
+      --blue: #1b4b8f;
+      --sky: #2f6dc4;
+      --gold: #f5a623;
+      --gold-2: #ffb83d;
+      --ink: #22303f;
+      --muted: #5b6b7b;
+      --cream: #f6f4ef;
+      --line: #e6e2d9;
+      --white: #ffffff;
+      --radius: 16px;
+      --shadow: 0 8px 26px rgba(18, 41, 77, .12);
+      --shadow-sm: 0 4px 14px rgba(18, 41, 77, .08);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    ul { list-style: none; }
+
+    .container { width: min(1140px, 92%); margin-inline: auto; }
+
+    /* ---------- Rate strip ---------- */
+    .rate-strip {
+      background: var(--navy-2);
+      color: #fff;
+      font-size: .92rem;
+      text-align: center;
+      padding: 9px 16px;
+    }
+    .rate-strip strong { color: var(--gold-2); }
+    .rate-strip a {
+      display: inline-block;
+      margin-top: 2px;
+      color: var(--gold-2);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      height: 68px;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--navy);
+      letter-spacing: .2px;
+    }
+    .logo .logo-ic {
+      width: 40px;
+      height: 40px;
+      border-radius: 11px;
+      background: linear-gradient(135deg, var(--navy), var(--blue));
+      display: grid;
+      place-items: center;
+      font-size: 1.25rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .logo small { display: block; font-weight: 600; font-size: .62rem; color: var(--sky); letter-spacing: .08em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { font-weight: 600; font-size: .94rem; color: var(--ink); transition: color .2s; }
+    .nav-links a:hover { color: var(--blue); }
+    .nav-cta { display: flex; align-items: center; gap: 10px; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: 0;
+      cursor: pointer;
+      padding: 6px;
+    }
+    .hamburger span { width: 24px; height: 2.5px; background: var(--navy); border-radius: 2px; transition: .25s; }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--gold);
+      color: #1c1200;
+      font-weight: 700;
+      font-size: .95rem;
+      padding: 13px 24px;
+      border-radius: 999px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: transform .18s, box-shadow .18s, background .18s;
+      box-shadow: 0 6px 18px rgba(245, 166, 35, .35);
+    }
+    .btn:hover { background: var(--gold-2); transform: translateY(-2px); box-shadow: 0 10px 22px rgba(245, 166, 35, .45); }
+    .btn-blue {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(27, 75, 143, .35);
+    }
+    .btn-blue:hover { background: var(--sky); box-shadow: 0 10px 22px rgba(27, 75, 143, .45); }
+    .btn-outline {
+      background: transparent;
+      color: var(--blue);
+      border-color: var(--blue);
+      box-shadow: none;
+    }
+    .btn-outline:hover { background: var(--blue); color: #fff; box-shadow: var(--shadow-sm); }
+    .btn-sm { padding: 10px 18px; font-size: .88rem; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      min-height: 580px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(13, 31, 60, .72) 0%, rgba(13, 31, 60, .55) 55%, var(--white) 100%),
+        url("assets/urbania-hero1920.jpg") center / cover no-repeat;
+      padding: 120px 16px 130px;
+      overflow: hidden;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1.15;
+      font-weight: 800;
+      letter-spacing: -.5px;
+      margin-bottom: 18px;
+    }
+    .hero h1 span { color: var(--gold-2); }
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 30px;
+      font-size: clamp(1rem, 1.6vw, 1.15rem);
+      color: #e9eef6;
+    }
+    .hero .btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .hero .badge {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(255, 255, 255, .14);
+      border: 1px solid rgba(255, 255, 255, .35);
+      backdrop-filter: blur(4px);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: .86rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 26px;
+    }
+    .hero .badge strong { color: var(--gold-2); }
+
+    /* ---------- Sections ---------- */
+    .section { padding: 76px 0; }
+    .cream { background: var(--cream); }
+    .sec-head { text-align: center; max-width: 720px; margin: 0 auto 44px; }
+    .sec-head .tag {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: rgba(27, 75, 143, .1);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+    .sec-head h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--navy); letter-spacing: -.3px; }
+    .sec-head p { color: var(--muted); margin-top: 10px; }
+
+    /* ---------- Service strip ---------- */
+    .service-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .service-item {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 26px 22px;
+      text-align: center;
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+      box-shadow: var(--shadow-sm);
+    }
+    .service-item:hover { transform: translateY(-5px); box-shadow: var(--shadow); border-color: var(--sky); }
+    .service-item .ic {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 14px;
+      display: grid;
+      place-items: center;
+      font-size: 1.7rem;
+      background: rgba(27, 75, 143, .08);
+      border-radius: 16px;
+    }
+    .service-item h4 { color: var(--navy); font-size: 1.05rem; margin-bottom: 6px; }
+    .service-item p { font-size: .88rem; color: var(--muted); }
+
+    /* ---------- Fleet ---------- */
+    .vehicle-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .vehicle-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .vehicle-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .vehicle-card .img { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #eef1f5; }
+    .vehicle-card .img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+    .vehicle-card:hover .img img { transform: scale(1.05); }
+    .seat-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: var(--navy);
+      color: #fff;
+      font-weight: 800;
+      font-size: .78rem;
+      padding: 6px 12px;
+      border-radius: 999px;
+      letter-spacing: .03em;
+    }
+    .vehicle-card .body { padding: 20px 22px 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+    .vehicle-card h3 { color: var(--navy); font-size: 1.15rem; }
+    .vehicle-card .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .vehicle-card .tags span {
+      font-size: .74rem;
+      font-weight: 700;
+      color: var(--blue);
+      background: rgba(27, 75, 143, .08);
+      border-radius: 999px;
+      padding: 4px 10px;
+    }
+    .vehicle-card .desc { font-size: .9rem; color: var(--muted); flex: 1; }
+    .vehicle-card .price-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px dashed var(--line);
+      padding-top: 14px;
+    }
+    .vehicle-card .price { font-size: .84rem; line-height: 1.4; color: var(--muted); }
+    .vehicle-card .price strong { display: block; color: var(--navy); font-size: 1.05rem; }
+    .text-center { text-align: center; }
+    .mt-4 { margin-top: 34px; }
+
+    /* ---------- Why us ---------- */
+    .feat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .feat {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .feat:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .feat .ic { font-size: 1.9rem; margin-bottom: 10px; }
+    .feat h4 { color: var(--navy); font-size: 1rem; margin-bottom: 6px; }
+    .feat p { font-size: .86rem; color: var(--muted); }
+
+    /* ---------- Temple tours ---------- */
+    .tour-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .tour-card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      min-height: 210px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      color: #fff;
+      background: linear-gradient(180deg, rgba(13, 31, 60, .12), rgba(13, 31, 60, .88)),
+        var(--blue);
+      box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .tour-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .tour-card .ic { font-size: 1.7rem; margin-bottom: 8px; filter: drop-shadow(0 2px 4px rgba(0,0,0,.3)); }
+    .tour-card h4 { font-size: 1.08rem; margin-bottom: 5px; }
+    .tour-card p { font-size: .84rem; opacity: .92; }
+
+    /* ---------- Pricing / CTA ---------- */
+    .pricing-wrap {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 30px;
+      align-items: stretch;
+    }
+    .pricing-card {
+      background: var(--navy);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow);
+      background-image:
+        radial-gradient(600px 200px at 100% 0%, rgba(47, 109, 196, .35), transparent),
+        linear-gradient(160deg, var(--navy), var(--navy-2));
+    }
+    .pricing-card h2 { font-size: 1.9rem; margin-bottom: 8px; }
+    .pricing-card > p { color: #c8d4e4; margin-bottom: 28px; }
+    .rate-block {
+      display: grid;
+      gap: 16px;
+      margin-bottom: 30px;
+    }
+    .rate {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 14px;
+      padding: 16px 20px;
+    }
+    .rate .lbl { font-weight: 600; font-size: .92rem; }
+    .rate .val {
+      font-weight: 800;
+      font-size: 1.3rem;
+      color: var(--gold-2);
+    }
+    .rate .val small { font-size: .8rem; font-weight: 600; color: #c8d4e4; }
+
+    .fare-box {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 34px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+    }
+    .fare-box h3 { color: var(--navy); margin-bottom: 6px; }
+    .fare-box > p { color: var(--muted); font-size: .9rem; margin-bottom: 20px; }
+    .fare-row { display: flex; gap: 10px; }
+    .fare-row input {
+      flex: 1;
+      min-width: 0;
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      font-size: 1rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color .2s;
+    }
+    .fare-row input:focus { border-color: var(--blue); }
+    .fare-out {
+      margin-top: 18px;
+      background: rgba(27, 75, 143, .08);
+      border-radius: 12px;
+      padding: 14px 16px;
+      font-size: .92rem;
+      color: var(--ink);
+      display: none;
+    }
+    .fare-out.show { display: block; animation: fadeUp .35s ease; }
+    .fare-out strong { color: var(--blue); font-size: 1.25rem; }
+    .fare-note { margin-top: 14px; font-size: .8rem; color: var(--muted); }
+
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+    /* ---------- Contact / Enquiry ---------- */
+    .contact-wrap { display: grid; grid-template-columns: 1fr 1.1fr; gap: 26px; align-items: start; }
+    .contact-info { display: grid; gap: 14px; }
+    .contact-card {
+      display: flex; gap: 14px; align-items: center;
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 18px 20px; box-shadow: var(--shadow-sm);
+      transition: transform .2s, box-shadow .2s, border-color .2s;
+    }
+    a.contact-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: var(--sky); }
+    .contact-card .cc-ic {
+      width: 52px; height: 52px; flex: none; display: grid; place-items: center;
+      background: rgba(27, 75, 143, .08); border-radius: 14px; font-size: 1.45rem;
+    }
+    .contact-card .cc-ic.wa-ic { background: rgba(37, 211, 102, .14); }
+    .wa-ic svg { width: 30px; height: 30px; fill: #25D366; }
+    .contact-card h4 { color: var(--navy); font-size: 1rem; }
+    .contact-card p { font-weight: 700; color: var(--blue); margin: 2px 0; }
+    .contact-card span { font-size: .82rem; color: var(--muted); }
+
+    .enquiry-form {
+      background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 30px; box-shadow: var(--shadow);
+    }
+    .enquiry-form h3 { color: var(--navy); margin-bottom: 4px; }
+    .enquiry-form .form-sub { color: var(--muted); font-size: .9rem; margin-bottom: 20px; }
+    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px; }
+    .f-field { display: flex; flex-direction: column; gap: 6px; }
+    .f-field label { font-size: .82rem; font-weight: 700; color: var(--navy); }
+    .f-field input, .f-field select, .f-field textarea {
+      border: 2px solid var(--line); border-radius: 12px; padding: 12px 14px;
+      font: inherit; font-size: .95rem; color: var(--ink); background: #fff; width: 100%;
+      outline: none; transition: border-color .2s;
+    }
+    .f-field input:focus, .f-field select:focus, .f-field textarea:focus { border-color: var(--blue); }
+    .f-field textarea { resize: vertical; min-height: 96px; }
+    .enquiry-form .btn { width: 100%; margin-top: 6px; }
+    @media (max-width: 780px) { .contact-wrap, .f-row { grid-template-columns: 1fr; } }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: var(--navy-2);
+      color: #b9c5d6;
+      padding: 54px 0 26px;
+      font-size: .9rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 34px;
+      margin-bottom: 34px;
+    }
+    footer h4 { color: #fff; font-size: 1rem; margin-bottom: 14px; }
+    footer a { color: #b9c5d6; transition: color .2s; }
+    footer a:hover { color: var(--gold-2); }
+    footer li { margin-bottom: 9px; }
+    .footer-brand .logo { color: #fff; margin-bottom: 10px; }
+    .footer-brand p { max-width: 340px; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      padding-top: 22px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: .82rem;
+    }
+
+    /* ---------- Reveal ---------- */
+    .reveal { opacity: 0; transform: translateY(22px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 940px) {
+      .service-strip, .feat-grid { grid-template-columns: repeat(2, 1fr); }
+      .tour-grid { grid-template-columns: repeat(2, 1fr); }
+      .vehicle-grid { grid-template-columns: repeat(2, 1fr); }
+      .pricing-wrap { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 720px) {
+      .section { padding: 56px 0; }
+      .nav-links {
+        position: fixed;
+        top: 68px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background: #fff;
+        border-bottom: 1px solid var(--line);
+        padding: 18px 20px 26px;
+        gap: 18px;
+        box-shadow: var(--shadow);
+        transform: translateY(-12px);
+        opacity: 0;
+        pointer-events: none;
+        transition: .25s;
+      }
+      .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
+      .hamburger { display: flex; }
+      .nav-cta .btn { padding: 10px 16px; font-size: .84rem; }
+      .hero { min-height: 520px; padding: 100px 16px 110px; }
+    }
+    @media (max-width: 520px) {
+      .service-strip, .feat-grid, .vehicle-grid, .tour-grid, .footer-grid { grid-template-columns: 1fr; }
+      .pricing-card { padding: 28px 22px; }
+      .fare-box { padding: 24px 20px; }
+    }
+  </style>
 </head>
 <body>
-  <div id="toast"></div>
-  <div class="rate-strip">🚐 Rent: <strong>₹36/km</strong> • Daily: <strong>₹9,500 incl. driver bata</strong> • <a href="rates.html">Get instant quote →</a></div>
-  <script>var ACTIVE_PAGE = "home";</script>
-  <script src="js/config.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/main.js"></script>
+
+  <!-- RATE STRIP -->
+  <div class="rate-strip">
+    🚐 Rent: <strong>₹36/km</strong> • Daily: <strong>₹9,500 incl. driver bata</strong> •
+    <a href="#pricing">Get instant quote →</a>
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="logo">
+        <span class="logo-ic">🚐</span>
+        <span>Semmozhi Tours<div style="height:2px"></div><small>Tours &amp; Travels</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#services">Trips</a>
+        <a href="#fleet">Our Fleet</a>
+        <a href="#why">Why Us</a>
+        <a href="#darshan">Temple Tours</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#" class="btn btn-blue btn-sm js-call">📞 Call Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
   <!-- HERO -->
-  <section class="hero" style="padding-bottom:70px">
-    <h1>Travel Anywhere in <span>India</span> in Comfort</h1>
-    <p>Force Urbania vans (9+1, 12+1, 16+1 seater) with push-back seats, AC and attached fridge. Local trips, corporate trips, temple tours & all-over-India journeys.</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative">
-      <a href="vehicles.html" class="btn">🚐 Our Fleet</a>
-      <a href="#" class="btn btn-blue" id="heroCallBtn">📞 Call Now</a>
+  <section class="hero" id="home">
+    <div>
+      <div class="badge">🚐 Force Urbania • <strong>₹36/km</strong> • Daily <strong>₹9,500</strong></div>
+      <h1>Travel Anywhere in <span>India</span> in Comfort</h1>
+      <p>Force Urbania vans (9+1, 12+1, 16+1 seater) with push-back seats, AC and attached fridge. Local trips, corporate trips, temple tours &amp; all-over-India journeys.</p>
+      <div class="btns">
+        <a href="#fleet" class="btn">🚐 Our Fleet</a>
+        <a href="#" class="btn btn-blue js-call">📞 Call Now</a>
+      </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section" style="padding-top:44px">
+  <section class="section" id="services" style="padding-top:44px">
     <div class="container">
       <div class="service-strip">
-        <a class="service-item" href="contact.html?type=local">
-          <div class="ic">🏠</div><h4>Local Trips</h4><p>City rentals for weddings, functions & family outings</p>
+        <a class="service-item reveal" href="#pricing">
+          <div class="ic">🏠</div>
+          <h4>Local Trips</h4>
+          <p>City rentals for weddings, functions &amp; family outings</p>
         </a>
-        <a class="service-item" href="contact.html?type=corporate">
-          <div class="ic">💼</div><h4>Corporate Trips</h4><p>Employee transport, events & airport transfers</p>
+        <a class="service-item reveal" href="#pricing">
+          <div class="ic">💼</div>
+          <h4>Corporate Trips</h4>
+          <p>Employee transport, events &amp; airport transfers</p>
         </a>
-        <a class="service-item" href="rates.html">
-          <div class="ic">🛣️</div><h4>Outstation Trips</h4><p>All over India at just ₹36/km</p>
+        <a class="service-item reveal" href="#pricing">
+          <div class="ic">🛣️</div>
+          <h4>Outstation Trips</h4>
+          <p>All over India at just ₹36/km</p>
         </a>
-        <a class="service-item" href="temple-tours.html">
-          <div class="ic">🛕</div><h4>Temple Tours</h4><p>Arupadai Veedu, Palani, Rameswaram & more</p>
+        <a class="service-item reveal" href="#darshan">
+          <div class="ic">🛕</div>
+          <h4>Temple Tours</h4>
+          <p>Arupadai Veedu, Palani, Rameswaram &amp; more</p>
         </a>
       </div>
     </div>
   </section>
 
   <!-- FLEET -->
-  <section class="section cream">
+  <section class="section cream" id="fleet">
     <div class="container">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <span class="tag">Our Fleet</span>
         <h2>Force Urbania Vans</h2>
         <p>All vans with comfortable push-back seats, full AC and experienced professional drivers.</p>
       </div>
-      <div class="vehicle-grid" id="vehicleGrid"></div>
-      <p class="text-center mt-3"><a href="vehicles.html" class="btn btn-outline">Compare All Vans →</a></p>
+
+      <div class="vehicle-grid">
+        <!-- 9+1 -->
+        <div class="vehicle-card reveal">
+          <div class="img">
+            <img src="assets/urbania-10d.webp" alt="Force Urbania 10D — 9+1 seater van" loading="lazy">
+            <span class="seat-badge">9+1 Seater</span>
+          </div>
+          <div class="body">
+            <h3>Force Urbania 10D</h3>
+            <div class="tags">
+              <span>💺 Push-Back Seats</span>
+              <span>❄️ Full AC</span>
+              <span>🧊 Fridge</span>
+            </div>
+            <p class="desc">Compact &amp; comfortable — perfect for family outings, airport transfers and city trips.</p>
+            <div class="price-row">
+              <div class="price">Rent per km<strong>₹36 / km</strong></div>
+              <div class="price">Daily (incl. driver bata)<strong>₹9,500 / day</strong></div>
+            </div>
+            <a href="#" class="btn btn-sm js-call" style="margin-top:6px">📞 Book This Van</a>
+          </div>
+        </div>
+
+        <!-- 12+1 -->
+        <div class="vehicle-card reveal">
+          <div class="img">
+            <img src="assets/urbania-12d.webp" alt="Force Urbania 12D — 12+1 seater van" loading="lazy">
+            <span class="seat-badge">12+1 Seater</span>
+          </div>
+          <div class="body">
+            <h3>Force Urbania 12D</h3>
+            <div class="tags">
+              <span>💺 Push-Back Seats</span>
+              <span>❄️ Full AC</span>
+              <span>🧊 Fridge</span>
+            </div>
+            <p class="desc">Spacious &amp; airy — ideal for weddings, functions and corporate groups.</p>
+            <div class="price-row">
+              <div class="price">Rent per km<strong>₹36 / km</strong></div>
+              <div class="price">Daily (incl. driver bata)<strong>₹9,500 / day</strong></div>
+            </div>
+            <a href="#" class="btn btn-sm js-call" style="margin-top:6px">📞 Book This Van</a>
+          </div>
+        </div>
+
+        <!-- 16+1 -->
+        <div class="vehicle-card reveal">
+          <div class="img">
+            <img src="assets/urbania-16d.webp" alt="Force Urbania 16D — 16+1 seater van" loading="lazy">
+            <span class="seat-badge">16+1 Seater</span>
+          </div>
+          <div class="body">
+            <h3>Force Urbania 16D</h3>
+            <div class="tags">
+              <span>💺 Push-Back Seats</span>
+              <span>❄️ Full AC</span>
+              <span>🧊 Fridge</span>
+            </div>
+            <p class="desc">Max space &amp; luggage — built for pilgrimages, group tours and all-India journeys.</p>
+            <div class="price-row">
+              <div class="price">Rent per km<strong>₹36 / km</strong></div>
+              <div class="price">Daily (incl. driver bata)<strong>₹9,500 / day</strong></div>
+            </div>
+            <a href="#" class="btn btn-sm js-call" style="margin-top:6px">📞 Book This Van</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center mt-4"><a href="#fleet" class="btn btn-outline">Compare All Vans →</a></p>
     </div>
   </section>
 
-  <!-- WHY US / FEATURES -->
-  <section class="section">
+  <!-- WHY US -->
+  <section class="section" id="why">
     <div class="container">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <span class="tag">Why Travel With Us</span>
-        <h2>Comfort, Safety & Reliability</h2>
+        <h2>Comfort, Safety &amp; Reliability</h2>
       </div>
       <div class="feat-grid">
-        <div class="feat"><div class="ic">💺</div><h4>Push-Back Seats</h4><p>Recline and relax on long journeys.</p></div>
-        <div class="feat"><div class="ic">❄️</div><h4>Full AC Travel</h4><p>Cool, dust-free comfort throughout.</p></div>
-        <div class="feat"><div class="ic">🧳</div><h4>Ample Luggage</h4><p>Plenty of space for bags and belongings.</p></div>
-        <div class="feat"><div class="ic">🛡️</div><h4>Safe & Reliable</h4><p>Well-maintained vehicles, always on time.</p></div>
-        <div class="feat"><div class="ic">🧊</div><h4>Attached Fridge</h4><p>Cold water and refreshments on board.</p></div>
-        <div class="feat"><div class="ic">👨‍✈️</div><h4>Pro Drivers</h4><p>Experienced, route-savvy professionals.</p></div>
-        <div class="feat"><div class="ic">🎒</div><h4>Flexible Packages</h4><p>Custom trips designed around you.</p></div>
-        <div class="feat"><div class="ic">📞</div><h4>24/7 Support</h4><p>We're a call away anytime.</p></div>
+        <div class="feat reveal"><div class="ic">💺</div><h4>Push-Back Seats</h4><p>Recline and relax on long journeys.</p></div>
+        <div class="feat reveal"><div class="ic">❄️</div><h4>Full AC Travel</h4><p>Cool, dust-free comfort throughout.</p></div>
+        <div class="feat reveal"><div class="ic">🧳</div><h4>Ample Luggage</h4><p>Plenty of space for bags and belongings.</p></div>
+        <div class="feat reveal"><div class="ic">🛡️</div><h4>Safe &amp; Reliable</h4><p>Well-maintained vehicles, always on time.</p></div>
+        <div class="feat reveal"><div class="ic">🧊</div><h4>Attached Fridge</h4><p>Cold water and refreshments on board.</p></div>
+        <div class="feat reveal"><div class="ic">👨‍✈️</div><h4>Pro Drivers</h4><p>Experienced, route-savvy professionals.</p></div>
+        <div class="feat reveal"><div class="ic">🎒</div><h4>Flexible Packages</h4><p>Custom trips designed around you.</p></div>
+        <div class="feat reveal"><div class="ic">📞</div><h4>24/7 Support</h4><p>We're a call away anytime.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- TEMPLE TOURS PREVIEW -->
-  <section class="section cream">
+  <!-- TEMPLE TOURS -->
+  <section class="section cream" id="darshan">
     <div class="container">
-      <div class="sec-head">
+      <div class="sec-head reveal">
         <span class="tag">Darshan Trips</span>
         <h2>Temple Tours</h2>
-        <p>Six abodes of Lord Muruga (Arupadai Veedu), Palani, Rameswaram, Tirupati, Sabarimala & more.</p>
+        <p>Six abodes of Lord Muruga (Arupadai Veedu), Palani, Rameswaram, Tirupati, Sabarimala &amp; more.</p>
       </div>
-      <div class="tour-grid" id="templeGrid"></div>
-      <p class="text-center mt-3"><a href="temple-tours.html" class="btn btn-outline">View All Temple Tours →</a></p>
-    </div>
-  </section>
-
-  <!-- RATES CTA -->
-  <section class="section">
-    <div class="container">
-      <div class="cta">
-        <h2>Transparent Pricing</h2>
-        <p>Rent <strong>₹36/km</strong> • Daily <strong>₹9,500</strong> including driver bata • No hidden charges</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center">
-          <a href="rates.html" class="btn">Calculate My Fare</a>
-          <a href="booking.html" class="btn btn-blue">Book a Vehicle</a>
+      <div class="tour-grid">
+        <div class="tour-card reveal">
+          <div class="ic">🛕</div>
+          <h4>Arupadai Veedu</h4>
+          <p>All six sacred abodes of Lord Muruga in one spiritual journey.</p>
+        </div>
+        <div class="tour-card reveal">
+          <div class="ic">⛰️</div>
+          <h4>Palani Darshan</h4>
+          <p>Famous hill shrine of Lord Muruga with scenic Ghat roads.</p>
+        </div>
+        <div class="tour-card reveal">
+          <div class="ic">🐚</div>
+          <h4>Rameswaram</h4>
+          <p>Ramanathaswamy Temple, dhanushkodi &amp; coastal serenity.</p>
+        </div>
+        <div class="tour-card reveal">
+          <div class="ic">🕉️</div>
+          <h4>Tirupati &amp; Sabarimala</h4>
+          <p>Multi-day pilgrimage tours planned with comfort in mind.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <script src="js/sw-register.js"></script>
-  <script>
-    (function () {
-      var vs = document.getElementById("vehicleGrid");
-      vs.innerHTML = DB.getVehicles().map(vehicleCardHtml).join("");
-      document.getElementById("heroCallBtn").href = "tel:+91" + CONFIG.primaryPhone;
+  <!-- PRICING / CTA -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="pricing-wrap">
+        <div class="pricing-card reveal">
+          <h2>Transparent Pricing</h2>
+          <p>Rent <strong style="color:#ffb83d">₹36/km</strong> • Daily <strong style="color:#ffb83d">₹9,500</strong> including driver bata • No hidden charges</p>
+          <div class="rate-block">
+            <div class="rate">
+              <span class="lbl">Outstation Rent</span>
+              <span class="val">₹36 <small>/ km</small></span>
+            </div>
+            <div class="rate">
+              <span class="lbl">Daily Hire (incl. driver bata)</span>
+              <span class="val">₹9,500 <small>/ day</small></span>
+            </div>
+          </div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="#pricing" class="btn js-fare-btn">🧮 Calculate My Fare</a>
+            <a href="#" class="btn btn-blue js-call">📅 Book a Vehicle</a>
+          </div>
+        </div>
 
-      var tg = document.getElementById("templeGrid");
-      var temples = DB.getTours().filter(function (t) { return t.category === "Temple"; }).slice(0, 3);
-      tg.innerHTML = temples.map(tourCardHtml).join("");
-    })();
+        <div class="fare-box reveal">
+          <h3>Calculate My Fare</h3>
+          <p>Outstation trips are billed at a flat <strong>₹36/km</strong>. Enter your approximate one-way distance to get an instant estimate.</p>
+          <div class="fare-row">
+            <input type="number" id="kmInput" min="0" placeholder="Distance in km (e.g. 350)" aria-label="Distance in kilometres">
+            <button class="btn" id="fareCalc">Calculate</button>
+          </div>
+          <div class="fare-out" id="fareOut"></div>
+          <p class="fare-note">Daily bookings start at ₹9,500 incl. driver bata. Final quote depends on route and trip type — call us for an instant quote.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / ENQUIRY -->
+  <section class="section cream" id="contact">
+    <div class="container">
+      <div class="sec-head reveal">
+        <span class="tag">Contact &amp; Enquiries</span>
+        <h2>Book Your Van</h2>
+        <p>Call us or send an enquiry — we'll get back to you right away with an instant quote.</p>
+      </div>
+
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <a class="contact-card reveal js-tel" href="#">
+            <div class="cc-ic">📞</div>
+            <div>
+              <h4>Call Now</h4>
+              <p class="js-phone">Calling…</p>
+              <span>Tap to call — available 24/7</span>
+            </div>
+          </a>
+          <a class="contact-card reveal js-wa" href="#">
+            <div class="cc-ic wa-ic">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.174-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </div>
+            <div>
+              <h4>WhatsApp</h4>
+              <p class="js-phone-wa">on WhatsApp</p>
+              <span>Message us on WhatsApp for quick quotes</span>
+            </div>
+          </a>
+          <div class="contact-card reveal">
+            <div class="cc-ic">🕘</div>
+            <div>
+              <h4>Availability</h4>
+              <p>24/7 Support</p>
+              <span>Weekdays &amp; holidays</span>
+            </div>
+          </div>
+          <div class="contact-card reveal">
+            <div class="cc-ic">📍</div>
+            <div>
+              <h4>Based In</h4>
+              <p>Mettur, Salem, Tamil Nadu</p>
+              <span>Serving trips all over India</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="enquiry-form reveal" id="enquiryForm">
+          <h3>Send an Enquiry</h3>
+          <p class="form-sub">Fill in your trip details and we'll get back to you with an instant quote.</p>
+          <div class="f-row">
+            <div class="f-field">
+              <label for="enqName">Your Name</label>
+              <input type="text" id="enqName" name="name" required placeholder="Enter your name">
+            </div>
+            <div class="f-field">
+              <label for="enqPhone">Contact Number</label>
+              <input type="tel" id="enqPhone" name="phone" required placeholder="Your mobile number">
+            </div>
+          </div>
+          <div class="f-row">
+            <div class="f-field">
+              <label for="enqVan">Van Type</label>
+              <select id="enqVan" name="van">
+                <option value="">Select van type</option>
+                <option>Force Urbania 10D — 9+1 Seater</option>
+                <option>Force Urbania 12D — 12+1 Seater</option>
+                <option>Force Urbania 16D — 16+1 Seater</option>
+              </select>
+            </div>
+            <div class="f-field">
+              <label for="enqKm">Approx. Distance (KM)</label>
+              <input type="number" id="enqKm" name="kms" min="0" placeholder="e.g. 350">
+            </div>
+          </div>
+          <div class="f-field">
+            <label for="enqDesc">Description / Trip Details</label>
+            <textarea id="enqDesc" name="desc" rows="4" placeholder="Tell us about your trip — dates, route, stops, number of passengers…"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Enquiry via WhatsApp</button>
+          <p class="fare-note">Submitting opens WhatsApp with your enquiry pre-filled — no account needed.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-ic">🚐</span>
+            <span>Semmozhi Tours<div style="height:2px"></div><small>Tours &amp; Travels</small></span>
+          </a>
+          <p>Force Urbania van rental for local trips, corporate transport, temple tours and all-over-India journeys — comfort, safety and reliability, on time.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#services">Trips</a></li>
+            <li><a href="#fleet">Our Fleet</a></li>
+            <li><a href="#darshan">Temple Tours</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#contact">📞 Call Now</a></li>
+            <li><a href="#" class="js-wa"><span class="js-phone-wa">💬 WhatsApp</span></a></li>
+            <li>🕘 Available 24/7</li>
+            <li>🏠 Mettur, Salem, Tamil Nadu</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Semmozhi Tours &amp; Travels. All rights reserved.</span>
+        <span>Force Urbania • Van Rental India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── CONFIGURATION ─────────────────────────────────────────
+    // Replace with your business phone number (country code, digits only)
+    var PHONE = "919790903606";
+    var PHONE_DISPLAY = "+91 97909 03606";
+    var RATE_PER_KM = 36;
+    var DAILY_RATE = 9500;
+
+    // ── CTA buttons: move to the contact area so the user can call ──
+    document.querySelectorAll(".js-call").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        var contact = document.getElementById("contact");
+        if (contact) {
+          contact.scrollIntoView({ behavior: "smooth", block: "start" });
+          contact.style.outline = "none";
+          contact.style.boxShadow = "inset 0 0 0 4px rgba(245,166,35,.35)";
+          setTimeout(function () { contact.style.boxShadow = ""; }, 1600);
+        }
+      });
+    });
+
+    // ── Direct dial (in the contact area) ─────────────────────
+    document.querySelectorAll(".js-tel").forEach(function (el) {
+      el.href = "tel:" + PHONE;
+    });
+
+    // ── WhatsApp links ────────────────────────────────────────
+    function waLink(msg) {
+      return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(msg || "");
+    }
+    document.querySelectorAll(".js-wa").forEach(function (el) {
+      el.href = waLink("Hello Semmozhi Tours & Travels! I would like to enquire about booking a Force Urbania van.");
+    });
+
+    var phoneSpans = document.querySelectorAll(".js-phone");
+    if (phoneSpans.length) phoneSpans.forEach(function (sp) { sp.textContent = PHONE_DISPLAY; });
+    var waSpans = document.querySelectorAll(".js-phone-wa");
+    if (waSpans.length) waSpans.forEach(function (sp) { sp.textContent = PHONE_DISPLAY + " — on WhatsApp"; });
+
+    // ── Enquiry form → WhatsApp ───────────────────────────────
+    var enquiryForm = document.getElementById("enquiryForm");
+    if (enquiryForm) {
+      enquiryForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var name = document.getElementById("enqName").value.trim();
+        var phone = document.getElementById("enqPhone").value.trim();
+        var van = document.getElementById("enqVan").value || "Not selected";
+        var km = document.getElementById("enqKm").value.trim();
+        var desc = document.getElementById("enqDesc").value.trim();
+
+        var lines = [
+          "New Booking Enquiry",
+          "Name: " + name,
+          "Phone: " + phone,
+          "Van: " + van,
+          "Distance: " + (km ? km + " km" : "—"),
+          "Details: " + (desc ? desc : "—")
+        ];
+        window.open(waLink(lines.join("\n")), "_blank");
+      });
+    }
+
+    // ── Mobile menu ───────────────────────────────────────────
+    var hamburger = document.getElementById("hamburger");
+    var navLinks = document.getElementById("navLinks");
+    hamburger.addEventListener("click", function () {
+      var open = navLinks.classList.toggle("open");
+      hamburger.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    navLinks.querySelectorAll("a").forEach(function (a) {
+      a.addEventListener("click", function () { navLinks.classList.remove("open"); });
+    });
+
+    // ── Fare calculator ───────────────────────────────────────
+    var kmInput = document.getElementById("kmInput");
+    var fareCalc = document.getElementById("fareCalc");
+    var fareOut = document.getElementById("fareOut");
+
+    function calcFare() {
+      var km = parseFloat(kmInput.value);
+      var display = "Please enter a valid distance.";
+      if (!isNaN(km) && km > 0) {
+        var est = Math.round(km * RATE_PER_KM);
+        display =
+          "Estimated outstation fare for <strong>" + km + " km</strong>: <strong>₹" +
+          est.toLocaleString("en-IN") + "</strong><br><span style='font-size:.82rem;color:#5b6b7b'>Daily packages from ₹" +
+          DAILY_RATE.toLocaleString("en-IN") + " incl. driver bata — call for an exact quote.</span>";
+      }
+      fareOut.innerHTML = display;
+      fareOut.classList.add("show");
+    }
+    fareCalc.addEventListener("click", calcFare);
+    kmInput.addEventListener("keyup", function (e) { if (e.key === "Enter") calcFare(); });
+    document.querySelector(".js-fare-btn").addEventListener("click", function (e) {
+      e.preventDefault();
+      var box = document.querySelector(".fare-box");
+      box.scrollIntoView({ behavior: "smooth", block: "center" });
+      box.style.boxShadow = "0 0 0 4px rgba(245,166,35,.35)";
+      setTimeout(function () { box.style.boxShadow = ""; }, 1600);
+      setTimeout(function () { kmInput.focus(); }, 450);
+    });
+
+    // ── Scroll reveal ─────────────────────────────────────────
+    var revealEls = document.querySelectorAll(".reveal");
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            en.target.classList.add("visible");
+            io.unobserve(en.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      revealEls.forEach(function (el) { io.observe(el); });
+    } else {
+      revealEls.forEach(function (el) { el.classList.add("visible"); });
+    }
+
+    // ── Footer year ───────────────────────────────────────────
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <script>renderFooter();</script>
 </body>
 </html>
