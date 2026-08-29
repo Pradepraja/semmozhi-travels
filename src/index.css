@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --navy: #12294d;
+    --navy-dark: #0a182e;
+    --navy-light: #1b3b6f;
+    --blue: #1b4b8f;
+    --sky: #2f6dc4;
+    --sky-light: #e8f0fe;
+    --gold: #f5a623;
+    --gold-light: #ffb83d;
+    --gold-glow: rgba(245, 166, 35, 0.25);
+    --ink: #1e293b;
+    --muted: #64748b;
+    --cream: #f8f6f0;
+    --cream-dark: #f0ece1;
+    --line: #e2e8f0;
+    --white: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--ink);
+    background-color: var(--white);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Custom Utilities for Watermelon UI Aesthetic */
+.glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(18, 41, 77, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.gradient-border-gold {
+  position: relative;
+}
+.gradient-border-gold::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #f5a623, #2f6dc4);
+  border-radius: 16px 16px 0 0;
+}
+
+.gradient-border-blue {
+  position: relative;
+}
+.gradient-border-blue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #2f6dc4, #1b4b8f);
+  border-radius: 16px 16px 0 0;
+}
