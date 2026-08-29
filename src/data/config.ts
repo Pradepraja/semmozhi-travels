@@ -13,8 +13,8 @@ export const SITE_CONFIG = {
 
 export const FLEET_DATA = [
   {
-    id: "10d",
-    title: "Force Urbania 10D",
+    id: "9d",
+    title: "Force Urbania 9D",
     seats: "9+1 Seater",
     image: "/assets/urbania-10d.webp",
     features: ["Push-Back Luxury Seats", "Full Climate AC", "Attached Chiller/Fridge"],
