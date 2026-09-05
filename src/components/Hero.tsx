@@ -15,8 +15,12 @@ export const Hero: React.FC = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Rate Announcement Badge */}
-        <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-inner hover:bg-white/15 transition-all">
-          <span className="text-base">🚐</span>
+        <div className="inline-flex items-center gap-2.5 mb-6 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 shadow-inner hover:bg-white/15 transition-all">
+          <img
+            src={SITE_CONFIG.logo}
+            alt="Semmozhi Tours Logo"
+            className="w-6 h-6 object-contain drop-shadow-sm"
+          />
           <span className="text-xs sm:text-sm font-semibold text-slate-200">Force Urbania</span>
           <span className="text-slate-400">•</span>
           <span className="text-xs sm:text-sm font-bold text-[#ffb83d]">₹34/km Flat</span>

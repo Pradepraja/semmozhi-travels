@@ -1,5 +1,6 @@
 import React from "react"
 import { Sparkles, Target, Compass, Award } from "lucide-react"
+import { SITE_CONFIG } from "../data/config"
 import { Card } from "./ui/card"
 
 export const VisionMission: React.FC = () => {
@@ -7,7 +8,8 @@ export const VisionMission: React.FC = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 text-amber-800 text-xs font-extrabold uppercase tracking-wider mb-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/70 text-amber-900 text-xs font-extrabold uppercase tracking-wider mb-3 shadow-xs">
+            <img src={SITE_CONFIG.logo} alt="Semmozhi Emblem" className="w-5 h-5 object-contain" />
             Our Purpose &amp; Values
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12294d] tracking-tight">

@@ -45,65 +45,149 @@ export const ContactForm: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Quick Contact Cards */}
-          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-            <a
-              href={SITE_CONFIG.telUrl}
-              className="block group"
-            >
-              <Card className="p-5 border-slate-200 hover:border-[#1b4b8f] hover:shadow-md transition-all flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-blue-50 text-[#1b4b8f] flex items-center justify-center text-xl shrink-0 group-hover:bg-[#1b4b8f] group-hover:text-white transition-colors">
-                  <Phone size={22} />
-                </div>
-                <div>
-                  <div className="text-xs font-semibold text-slate-500 uppercase">Call Directly</div>
-                  <div className="text-base font-extrabold text-[#12294d] group-hover:text-[#1b4b8f] transition-colors">
-                    {SITE_CONFIG.phoneDisplay}
+          <div className="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-3.5">
+            {/* Contact 1 - Primary */}
+            <div className="p-4 rounded-xl border border-slate-200 bg-white hover:border-[#1b4b8f] hover:shadow-md transition-all">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#1b4b8f] flex items-center justify-center text-lg shrink-0">
+                    <Phone size={20} />
                   </div>
-                  <div className="text-[11px] text-slate-400">Available 24/7 for bookings</div>
-                </div>
-              </Card>
-            </a>
-
-            <a
-              href={SITE_CONFIG.whatsappUrl()}
-              target="_blank"
-              rel="noreferrer"
-              className="block group"
-            >
-              <Card className="p-5 border-slate-200 hover:border-[#25D366] hover:shadow-md transition-all flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-emerald-50 text-[#25D366] flex items-center justify-center text-xl shrink-0 group-hover:bg-[#25D366] group-hover:text-white transition-colors">
-                  <MessageCircle size={22} />
-                </div>
-                <div>
-                  <div className="text-xs font-semibold text-slate-500 uppercase">WhatsApp Support</div>
-                  <div className="text-base font-extrabold text-[#12294d] group-hover:text-[#25D366] transition-colors">
-                    {SITE_CONFIG.phoneDisplay}
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                      Primary Contact &amp; Bookings
+                    </div>
+                    <a
+                      href={SITE_CONFIG.telUrl}
+                      className="text-base font-extrabold text-[#12294d] hover:text-[#1b4b8f] transition-colors block"
+                    >
+                      {SITE_CONFIG.phoneDisplay}
+                    </a>
                   </div>
-                  <div className="text-[11px] text-slate-400">Instant quotes &amp; vehicle photos</div>
                 </div>
-              </Card>
-            </a>
+                <div className="flex items-center gap-1.5">
+                  <a
+                    href={SITE_CONFIG.telUrl}
+                    className="p-2 rounded-lg bg-blue-50 text-[#1b4b8f] hover:bg-[#1b4b8f] hover:text-white transition-colors"
+                    title="Call Now"
+                  >
+                    <Phone size={16} />
+                  </a>
+                  <a
+                    href={SITE_CONFIG.whatsappUrl("Hello Semmozhi Travels, I want to book a Force Urbania.", SITE_CONFIG.phone)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded-lg bg-emerald-50 text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors"
+                    title="WhatsApp"
+                  >
+                    <MessageCircle size={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
 
-            <Card className="p-5 border-slate-200 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl shrink-0">
-                <Clock size={22} />
+            {/* Contact 2 */}
+            <div className="p-4 rounded-xl border border-slate-200 bg-white hover:border-[#1b4b8f] hover:shadow-md transition-all">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#1b4b8f] flex items-center justify-center text-lg shrink-0">
+                    <Phone size={20} />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                      Helpline 2
+                    </div>
+                    <a
+                      href={SITE_CONFIG.telUrl2}
+                      className="text-base font-extrabold text-[#12294d] hover:text-[#1b4b8f] transition-colors block"
+                    >
+                      {SITE_CONFIG.phone2Display}
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <a
+                    href={SITE_CONFIG.telUrl2}
+                    className="p-2 rounded-lg bg-blue-50 text-[#1b4b8f] hover:bg-[#1b4b8f] hover:text-white transition-colors"
+                    title="Call Helpline 2"
+                  >
+                    <Phone size={16} />
+                  </a>
+                  <a
+                    href={SITE_CONFIG.whatsappUrl("Hello Semmozhi Travels, I have an enquiry for travel.", SITE_CONFIG.phone2)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded-lg bg-emerald-50 text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors"
+                    title="WhatsApp Helpline 2"
+                  >
+                    <MessageCircle size={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact 3 */}
+            <div className="p-4 rounded-xl border border-slate-200 bg-white hover:border-[#1b4b8f] hover:shadow-md transition-all">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-50 text-[#1b4b8f] flex items-center justify-center text-lg shrink-0">
+                    <Phone size={20} />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">
+                      Helpline 3
+                    </div>
+                    <a
+                      href={SITE_CONFIG.telUrl3}
+                      className="text-base font-extrabold text-[#12294d] hover:text-[#1b4b8f] transition-colors block"
+                    >
+                      {SITE_CONFIG.phone3Display}
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <a
+                    href={SITE_CONFIG.telUrl3}
+                    className="p-2 rounded-lg bg-blue-50 text-[#1b4b8f] hover:bg-[#1b4b8f] hover:text-white transition-colors"
+                    title="Call Helpline 3"
+                  >
+                    <Phone size={16} />
+                  </a>
+                  <a
+                    href={SITE_CONFIG.whatsappUrl("Hello Semmozhi Travels, I have an enquiry for travel.", SITE_CONFIG.phone3)}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-2 rounded-lg bg-emerald-50 text-[#25D366] hover:bg-[#25D366] hover:text-white transition-colors"
+                    title="WhatsApp Helpline 3"
+                  >
+                    <MessageCircle size={16} />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Operating Hours */}
+            <Card className="p-4 border-slate-200 flex items-center gap-4">
+              <div className="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg shrink-0">
+                <Clock size={20} />
               </div>
               <div>
-                <div className="text-xs font-semibold text-slate-500 uppercase">Operating Hours</div>
-                <div className="text-base font-extrabold text-[#12294d]">
+                <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Operating Hours</div>
+                <div className="text-sm font-extrabold text-[#12294d]">
                   24 Hours / 7 Days
                 </div>
-                <div className="text-[11px] text-slate-400">Night trips &amp; emergency bookings</div>
+                <div className="text-[11px] text-slate-400">Night trips &amp; instant assistance</div>
               </div>
             </Card>
 
-            <Card className="p-5 border-slate-200 flex items-center gap-4">
-              <div className="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center text-xl shrink-0">
-                <MapPin size={22} />
+            {/* Headquarters */}
+            <Card className="p-4 border-slate-200 flex items-center gap-4">
+              <div className="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center text-lg shrink-0">
+                <MapPin size={20} />
               </div>
               <div>
-                <div className="text-xs font-semibold text-slate-500 uppercase">Headquarters</div>
-                <div className="text-base font-extrabold text-[#12294d]">
+                <div className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Headquarters</div>
+                <div className="text-sm font-extrabold text-[#12294d]">
                   {SITE_CONFIG.location}
                 </div>
                 <div className="text-[11px] text-slate-400">Serving trips across India</div>

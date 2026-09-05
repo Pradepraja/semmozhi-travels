@@ -1,14 +1,47 @@
+export const CONTACT_NUMBERS = [
+  {
+    phone: "919500654303",
+    display: "+91 95006 54303",
+    label: "Primary Bookings",
+    isPrimary: true,
+  },
+  {
+    phone: "917010356551",
+    display: "+91 70103 56551",
+    label: "Helpline 2",
+    isPrimary: false,
+  },
+  {
+    phone: "917708463608",
+    display: "+91 77084 63608",
+    label: "Helpline 3",
+    isPrimary: false,
+  },
+]
+
+import logoImg from "../assets/logo.png"
+
 export const SITE_CONFIG = {
-  phone: "919790903606",
-  phoneDisplay: "+91 97909 03606",
+  logo: logoImg,
+  brandName: "Semmozhi Tours & Travels",
+  tagline: "Where Your Journey Begins",
+  phone: "919500654303",
+  phoneDisplay: "+91 95006 54303",
+  phone2: "917010356551",
+  phone2Display: "+91 70103 56551",
+  phone3: "917708463608",
+  phone3Display: "+91 77084 63608",
+  contacts: CONTACT_NUMBERS,
   ratePerKm: 34,
   dailyRate: 9500,
   location: "Mettur, Salem, Tamil Nadu",
-  whatsappUrl: (message?: string) =>
-    `https://wa.me/919790903606?text=${encodeURIComponent(
+  whatsappUrl: (message?: string, phoneNum: string = "919500654303") =>
+    `https://wa.me/${phoneNum}?text=${encodeURIComponent(
       message || "Hello Semmozhi Tours & Travels! I would like to enquire about booking a Force Urbania van."
     )}`,
-  telUrl: "tel:919790903606",
+  telUrl: "tel:919500654303",
+  telUrl2: "tel:917010356551",
+  telUrl3: "tel:917708463608",
 }
 
 export const FLEET_DATA = [

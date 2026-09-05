@@ -11,15 +11,17 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand Col */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1b4b8f] to-[#2f6dc4] flex items-center justify-center text-xl shadow-md">
-                🚐
-              </div>
+            <div className="flex items-center gap-3.5">
+              <img
+                src={SITE_CONFIG.logo}
+                alt="Semmozhi Tours & Travels Logo"
+                className="h-16 sm:h-20 w-auto object-contain drop-shadow-[0_4px_16px_rgba(255,184,61,0.25)]"
+              />
               <div>
-                <div className="font-black text-xl text-white tracking-tight">
-                  Semmozhi Tours
+                <div className="font-black text-2xl text-white tracking-tight">
+                  Semmozhi
                 </div>
-                <div className="text-[10px] font-bold text-[#ffb83d] tracking-widest uppercase">
+                <div className="text-[10px] font-bold text-[#ffb83d] tracking-widest uppercase mt-0.5">
                   Tours &amp; Travels
                 </div>
               </div>
@@ -94,6 +96,18 @@ export const Footer: React.FC = () => {
                 <Phone size={16} className="text-[#ffb83d]" />
                 <a href={SITE_CONFIG.telUrl} className="hover:text-white transition-colors">
                   {SITE_CONFIG.phoneDisplay}
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone size={16} className="text-[#ffb83d]" />
+                <a href={SITE_CONFIG.telUrl2} className="hover:text-white transition-colors">
+                  {SITE_CONFIG.phone2Display}
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone size={16} className="text-[#ffb83d]" />
+                <a href={SITE_CONFIG.telUrl3} className="hover:text-white transition-colors">
+                  {SITE_CONFIG.phone3Display}
                 </a>
               </li>
               <li className="flex items-center gap-2.5">

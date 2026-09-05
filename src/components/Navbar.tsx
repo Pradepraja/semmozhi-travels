@@ -53,15 +53,17 @@ export const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#12294d] to-[#1b4b8f] flex items-center justify-center text-xl shadow-md group-hover:scale-105 transition-transform">
-              🚐
-            </div>
+          <a href="#home" className="flex items-center gap-3.5 group">
+            <img
+              src={SITE_CONFIG.logo}
+              alt="Semmozhi Tours and Travels Logo"
+              className="h-12 sm:h-14 w-auto object-contain drop-shadow-sm group-hover:scale-105 transition-transform"
+            />
             <div>
-              <div className="font-extrabold text-lg text-[#12294d] leading-none tracking-tight">
+              <div className="font-extrabold text-lg sm:text-xl text-[#12294d] leading-none tracking-tight">
                 Semmozhi Tours
               </div>
-              <div className="text-[10px] font-bold text-[#2f6dc4] tracking-widest uppercase mt-0.5">
+              <div className="text-[10px] font-extrabold text-[#2f6dc4] tracking-widest uppercase mt-1">
                 Tours &amp; Travels
               </div>
             </div>
